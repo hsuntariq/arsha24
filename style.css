@@ -50,3 +50,36 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+.bg-blue{
+    background-color: var(--main-color) !important;
+}
+
+.work-card{
+    overflow: hidden;
+}
+
+/* .work-card img{
+    transition: all 0.4s;
+    
+} */
+
+.work-card img{
+    transition: all 0.4s;
+}
+
+.content{
+    z-index: 2;
+}
+
+.work-card:hover img{
+    transform: scale(1.1);
+}
+
+.work-card:hover .content{
+    transform: translateY(-10px);
+}
+
+.work-card .content{
+    transition: all 0.4s;
+}
