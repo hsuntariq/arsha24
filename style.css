@@ -1,5 +1,5 @@
 :root{
-    --main-color : #37517E;
+    --main-color : rgb(55, 81, 126);
 }
 
 .hero-section{
@@ -82,4 +82,38 @@
 
 .work-card .content{
     transition: all 0.4s;
+}
+
+.image-container{
+    background: linear-gradient(to right,rgba(55, 81, 126,0.5),rgba(55, 81, 126,0.7)), url('https://bootstrapmade.com/content/demo/Arsha/assets/img/bg/bg-8.webp') fixed;
+}
+
+.image-animation{
+    overflow: hidden;
+}
+
+.overlay{
+    bottom: -90px;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.image-animation:hover .overlay{
+    bottom: 0px;
+}
+
+.social-icons i{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.social-icons i:hover{
+    background-color: var(--bs-info);
+    color: white;
 }
