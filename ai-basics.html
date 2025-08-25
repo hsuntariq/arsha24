@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn AI basics with this tutorial. Covers machine learning concepts, data preprocessing, and building a model with Python and scikit-learn."
+    />
+    <meta
+      name="keywords"
+      content="AI tutorial, machine learning basics, Python AI, scikit-learn, artificial intelligence, data preprocessing"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>AI Basics - Bloggy Tech</title>
+  </head>
+
+  <body>
+    <div class="container-fluid hero-section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand fs-2 text-uppercase fw-semibold"
+              href="index.html"
+              >Bloggy Tech</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="tutorials.html"
+                    >Tutorials</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    More
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Terms of Service</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Sitemap</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="btn btn-info text-white px-4 rounded-pill"
+                    href="subscriptions.html"
+                    >Subscribe</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-4 fw-bold text-white">AI Basics</h1>
+            <p class="fs-4 fw-semibold text-white-50">
+              Learn the fundamentals of artificial intelligence with hands-on
+              Python and scikit-learn examples.
+            </p>
+            <button class="btn btn-info text-white rounded-pill px-3">
+              Get Started
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="animate-image"
+              src="./hero-img.png"
+              width="100%"
+              alt="Illustration of AI and machine learning concepts"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <div
+        class="ad-space text-center"
+        style="height: 90px; background-color: #f0f0f0"
+      >
+        <!-- Google AdSense code would go here -->
+      </div>
+    </div>
+
+    <section class="container py-xl-5 py-3">
+      <h2 class="text-center text-uppercase fw-bold text-blue">
+        AI Basics Tutorial
+      </h2>
+      <div class="gray-line">
+        <div class="blue-line"></div>
+      </div>
+      <p class="text-center my-3">
+        Get started with artificial intelligence using Python and scikit-learn
+        for machine learning.
+      </p>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3 class="text-blue">1. Introduction to Artificial Intelligence</h3>
+          <p>
+            Artificial Intelligence (AI) enables machines to mimic human
+            intelligence, performing tasks like decision-making and pattern
+            recognition. Machine learning (ML), a subset of AI, allows systems
+            to learn from data. This tutorial focuses on supervised learning,
+            where models predict outcomes based on labeled data, using Python
+            and scikit-learn.
+          </p>
+
+          <h4>Setting Up Your Environment</h4>
+          <p>
+            Install Python from <a href="https://python.org">python.org</a> and
+            verify:
+          </p>
+          <pre><code>python --version
+</code></pre>
+          <p>Install scikit-learn and dependencies using pip:</p>
+          <pre><code>pip install scikit-learn numpy pandas
+</code></pre>
+          <p>Create a new Python file, e.g., `ai_model.py`, to start coding.</p>
+
+          <h4>Understanding Supervised Learning</h4>
+          <p>
+            Supervised learning involves training a model on input-output pairs.
+            For example, in a classification task, you predict categories (e.g.,
+            spam vs. not spam). We’ll use the Iris dataset, a classic dataset
+            for classifying flower species based on measurements.
+          </p>
+          <p>Load the Iris dataset and explore it:</p>
+          <pre><code>from sklearn.datasets import load_iris
+import pandas as pd
+
+iris = load_iris()
+data = pd.DataFrame(iris.data, columns=iris.feature_names)
+print(data.head())
+</code></pre>
+          <p>
+            This displays the first five rows of the dataset, showing features
+            like sepal length and petal width.
+          </p>
+
+          <h4>Data Preprocessing</h4>
+          <p>
+            Data must be preprocessed for ML models. Split the Iris dataset into
+            training and testing sets:
+          </p>
+          <pre><code>from sklearn.model_selection import train_test_split
+
+X = iris.data
+y = iris.target
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+</code></pre>
+          <p>
+            `test_size=0.2` means 20% of the data is reserved for testing, and
+            `random_state=42` ensures reproducibility.
+          </p>
+
+          <h4>Building a Classification Model</h4>
+          <p>Use a Decision Tree classifier to predict flower species:</p>
+          <pre><code>from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+
+model = DecisionTreeClassifier(random_state=42)
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuracy: {accuracy:.2f}")
+</code></pre>
+          <p>
+            This trains the model on the training data and evaluates its
+            accuracy on the test data, typically around 0.97 for Iris.
+          </p>
+
+          <h4>Practical Example: Predicting New Data</h4>
+          <p>
+            Test the model with a new sample (e.g., measurements for a new
+            flower):
+          </p>
+          <pre><code>import numpy as np
+
+new_flower = np.array([[5.0, 3.4, 1.5, 0.2]])  # Example measurements
+prediction = model.predict(new_flower)
+print(f"Predicted species: {iris.target_names[prediction[0]]}")
+</code></pre>
+          <p>
+            This outputs the predicted species (e.g., `setosa`). Adjust the
+            input measurements to test different predictions.
+          </p>
+
+          <h4>Visualizing Results</h4>
+          <p>Visualize feature importance to understand the model:</p>
+          <pre><code>import matplotlib.pyplot as plt
+
+importances = model.feature_importances_
+plt.bar(iris.feature_names, importances)
+plt.title("Feature Importance in Decision Tree")
+plt.show()
+</code></pre>
+          <p>
+            This bar plot shows which features (e.g., petal length) most
+            influence the model’s predictions.
+          </p>
+
+          <h4>Next Steps</h4>
+          <p>
+            Explore advanced ML algorithms like Random Forests or Neural
+            Networks. Try other datasets from scikit-learn (e.g., digits, breast
+            cancer). Deploy your model using Flask or FastAPI for web
+            integration. For deeper AI, study deep learning with TensorFlow or
+            PyTorch.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container my-4">
+      <div
+        class="ad-space text-center"
+        style="height: 250px; background-color: #f0f0f0"
+      >
+        <!-- Google AdSense code would go here -->
+      </div>
+    </div>
+
+    <footer class="container py-xl-5 py-3">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li>
+              <h2 class="text-blue text-uppercase fw-bold">Bloggy Tech</h2>
+            </li>
+            <li>Wah cantt</li>
+            <li></li>
+            <li class="mt-2"><b>Phone:</b> +92 315 1248441</li>
+            <li><b>Email:</b> info@bloggytech.com</li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li>
+              <h4 class="text-blue text-uppercase fw-bold">Useful Links</h4>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-info"></i>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-info"></i>
+              <a href="about.html">About Us</a>
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-chevron-right text-info"></i>
+              <a href="tutorials.html">Tutorials</a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-info"></i>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li>
+              <h4 class="text-blue text-uppercase fw-bold">Our Services</h4>
+            </li>
+            <li>Programming Tutorials</li>
+            <li>Tech News</li>
+            <li class="mt-2">Developer Resources</li>
+            <li>Community Forums</li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li><h4 class="text-blue text-uppercase fw-bold">Follow Us</h4></li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-twitter-x"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-linkedin"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="text-center text-sm">
+        © Copyright <b>Bloggy Tech</b> All Rights Reserved
+      </p>
+      <p class="text-center text-sm">
+        Designed by <span class="text-info">BloggyTech</span>
+      </p>
+    </footer>
+
+    <div class="container my-4">
+      <div
+        class="ad-space text-center"
+        style="height: 90px; background-color: #f0f0f0"
+      >
+        <!-- Google AdSense code would go here -->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

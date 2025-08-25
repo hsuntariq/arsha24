@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn DevOps basics with this tutorial. Covers CI/CD pipelines, Git version control, and Docker containerization for beginners."
+    />
+    <meta
+      name="keywords"
+      content="DevOps tutorial, CI/CD pipeline, Git version control, Docker containerization, DevOps basics, software deployment"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DevOps Basics - Bloggy Tech Blog</title>
+  </head>
+
+  <body>
+    <div class="container-fluid hero-section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand fs-2 text-uppercase fw-semibold"
+              href="index.html"
+              >Bloggy Tech</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="tutorials.html"
+                    >Tutorials</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="authors.html">Authors</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="subscriptions.html"
+                    >Subscriptions</a
+                  >
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    More
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Terms of Service</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Sitemap</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="btn btn-info text-white px-4 rounded-pill"
+                    href="subscriptions.html"
+                    >Subscribe</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-4 fw-bold text-white">Python for Beginners</h1>
+            <p class="fs-4 fw-semibold text-white-50">
+              Learn the basics of Python programming with hands-on examples.
+            </p>
+            <button class="btn btn-info text-white rounded-pill px-3">
+              Get Started
+            </button>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="animate-image"
+              src="./hero-img.png"
+              width="100%"
+              alt="Illustration of Python programming"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <div
+        class="ad-space text-center"
+        style="height: 90px; background-color: #f0f0f0"
+      >
+        <!-- Google AdSense code would go here -->
+      </div>
+    </div>
+
+    <section class="container py-xl-5 py-3">
+      <h2 class="text-center text-uppercase fw-bold text-blue">
+        DevOps Basics Tutorial
+      </h2>
+      <div class="gray-line">
+        <div class="blue-line"></div>
+      </div>
+      <p class="text-center my-3">
+        Master the fundamentals of DevOps with practical examples on Git, CI/CD,
+        and Docker.
+      </p>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h3 class="text-blue">1. Introduction to DevOps</h3>
+          <p>
+            DevOps combines development and operations to improve software
+            delivery through automation, collaboration, and continuous
+            improvement. This tutorial introduces key DevOps practices: version
+            control with Git, continuous integration/continuous deployment
+            (CI/CD) with GitHub Actions, and containerization with Docker.
+          </p>
+
+          <h4>Setting Up Git</h4>
+          <p>
+            Git is a version control system for tracking code changes. Install
+            Git from <a href="https://git-scm.com">git-scm.com</a> and verify:
+          </p>
+          <pre><code>git --version
+</code></pre>
+          <p>Initialize a Git repository:</p>
+          <pre><code>mkdir my-project
+cd my-project
+git init
+</code></pre>
+          <p>Create a file (e.g., `index.html`), stage, and commit it:</p>
+          <pre><code>echo "<h1>Hello, DevOps!</h1>" > index.html
+git add .
+git commit -m "Initial commit"
+</code></pre>
+          <p>Push to a remote repository (e.g., GitHub):</p>
+          <pre><code>git remote add origin https://github.com/username/my-project.git
+git push -u origin main
+</code></pre>
+
+          <h4>Setting Up a CI/CD Pipeline with GitHub Actions</h4>
+          <p>
+            GitHub Actions automates testing and deployment. Create a workflow
+            file at `.github/workflows/ci.yml` in your repository:
+          </p>
+          <pre><code>name: CI Pipeline
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+</code></pre>
+          <p>
+            This workflow triggers on pushes to the `main` branch, checks out
+            the code, sets up Node.js, installs dependencies, and runs tests.
+            Create a simple `package.json` for a Node.js project:
+          </p>
+          <pre><code>{
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Tests passed\" && exit 0"
+  }
+}
+</code></pre>
+          <p>Push the changes to see the workflow run on GitHub.</p>
+
+          <h4>Containerizing with Docker</h4>
+          <p>
+            Docker packages applications with dependencies. Install Docker from
+            <a href="https://www.docker.com">docker.com</a> and verify:
+          </p>
+          <pre><code>docker --version
+</code></pre>
+          <p>Create a simple Node.js app (`app.js`):</p>
+          <pre><code>const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, DevOps!');
+});
+
+app.listen(3000, () => {
+  console.log('Server running on port 3000');
+});
+</code></pre>
+          <p>Create a `Dockerfile`:</p>
+          <pre><code>FROM node:16
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD ["node", "app.js"]
+</code></pre>
+          <p>Build and run the Docker container:</p>
+          <pre><code>docker build -t my-devops-app .
+docker run -p 3000:3000 my-devops-app
+</code></pre>
+          <p>Access the app at `http://localhost:3000`.</p>
+
+          <h4>Practical Example: CI/CD with Docker Deployment</h4>
+          <p>
+            Extend the GitHub Actions workflow to build and push a Docker image
+            to Docker Hub. Update `ci.yml`:
+          </p>
+          <pre><code>name: CI/CD Pipeline
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: username/my-devops-app:latest
+</code></pre>
+          <p>
+            Add `DOCKER_USERNAME` and `DOCKER_PASSWORD` as GitHub Secrets in
+            your repository settings. This workflow builds and pushes the Docker
+            image to Docker Hub on every push to `main`.
+          </p>
+
+          <h4>Next Steps</h4>
+          <p>
+            Explore tools like Kubernetes for orchestration, Jenkins for
+            advanced CI/CD, or Terraform for infrastructure as code. Practice by
+            deploying the app to a cloud provider like AWS or Azure.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container my-4">
+      <div
+        class="ad-space text-center"
+        style="height: 250px; background-color: #f0f0f0"
+      >
+        <!-- Google AdSense code would go here -->
+      </div>
+    </div>
+
+    <footer class="container py-xl-5 py-3">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li>
+              <h2 class="text-blue text-uppercase fw-bold">Bloggy Tech</h2>
+            </li>
+            <li>Wah cantt</li>
+            <li></li>
+            <li class="mt-2"><b>Phone:</b> +92 315 1248441</li>
+            <li><b>Email:</b> info@bloggytech.com</li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li>
+              <h4 class="text-blue text-uppercase fw-bold">Useful Links</h4>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-info"></i>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-info"></i>
+              <a href="about.html">About Us</a>
+            </li>
+            <li class="mt-2">
+              <i class="bi bi-chevron-right text-info"></i>
+              <a href="tutorials.html">Tutorials</a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right text-info"></i>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li>
+              <h4 class="text-blue text-uppercase fw-bold">Our Services</h4>
+            </li>
+            <li>Programming Tutorials</li>
+            <li>Tech News</li>
+            <li class="mt-2">Developer Resources</li>
+            <li>Community Forums</li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li><h4 class="text-blue text-uppercase fw-bold">Follow Us</h4></li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-twitter-x"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-linkedin"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="text-center text-sm">
+        © Copyright <b>Bloggy Tech</b> All Rights Reserved
+      </p>
+      <p class="text-center text-sm">
+        Designed by <span class="text-info">BloggyTech</span>
+      </p>
+    </footer>
+
+    <div class="container my-4">
+      <div
+        class="ad-space text-center"
+        style="height: 90px; background-color: #f0f0f0"
+      >
+        <!-- Google AdSense code would go here -->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

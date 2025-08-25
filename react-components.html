@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to build reusable UI components in React.js with this tutorial. Covers functional components, state, props, and a practical example.">
+    <meta name="keywords" content="React.js tutorial, React components, functional components, state management, props, JavaScript frameworks">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>React.js Components - Bloggy Tech Blog</title>
+</head>
+
+<body>
+    <div class="container-fluid hero-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-2 text-uppercase fw-semibold" href="index.html">Bloggy Tech</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="tutorials.html">Tutorials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="authors.html">Authors</a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="subscriptions.html">Subscriptions</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    More
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                                    <li><a class="dropdown-item" href="#">Terms of Service</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Sitemap</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-info text-white px-4 rounded-pill" href="subscriptions.html">Subscribe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold text-white">React.js Components</h1>
+                    <p class="fs-4 fw-semibold text-white-50">Build reusable UI components with React.js and state management.</p>
+                    <button class="btn btn-info text-white rounded-pill px-3">Get Started</button>
+                </div>
+                <div class="col-lg-6">
+                    <img class="animate-image" src="./hero-img.png" width="100%" alt="Illustration of React.js components">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="ad-space text-center" style="height: 90px; background-color: #f0f0f0;">
+            <!-- Google AdSense code would go here -->
+        </div>
+    </div>
+
+    <section class="container py-xl-5 py-3">
+        <h2 class="text-center text-uppercase fw-bold text-blue">React.js Components Tutorial</h2>
+        <div class="gray-line">
+            <div class="blue-line"></div>
+        </div>
+        <p class="text-center my-3">Learn to create reusable UI components in React.js with this step-by-step guide.</p>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h3 class="text-blue">1. Introduction to React Components</h3>
+                <p>React.js is a JavaScript library for building user interfaces, emphasizing reusable components. Components are independent, reusable pieces of UI, like buttons or forms, that can manage their own state and props.</p>
+
+                <h4>Setting Up React</h4>
+                <p>Create a new React app using Create React App:</p>
+                <pre><code>npx create-react-app my-app
+cd my-app
+npm start
+</code></pre>
+                <p>This sets up a development environment at <code>http://localhost:3000</code>.</p>
+
+                <h4>Creating a Functional Component</h4>
+                <p>Functional components are JavaScript functions that return JSX. Here’s a simple component:</p>
+                <pre><code>function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+</code></pre>
+                <p>Use this component in your app:</p>
+                <pre><code>import React from 'react';
+import ReactDOM from 'react-dom';
+import Welcome from './Welcome';
+
+ReactDOM.render(<Welcome name="Alice" />, document.getElementById('root'));
+</code></pre>
+
+                <h4>Managing State with Hooks</h4>
+                <p>Use the <code>useState</code> hook to add state to functional components:</p>
+                <pre><code>import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+</code></pre>
+                <p>This component tracks a counter value and updates it when the button is clicked.</p>
+
+                <h4>Practical Example: To-Do List</h4>
+                <p>Let’s build a simple to-do list component:</p>
+                <pre><code>import React, { useState } from 'react';
+
+function TodoList() {
+  const [todos, setTodos] = useState([]);
+  const [input, setInput] = useState('');
+
+  const addTodo = () => {
+    if (input.trim()) {
+      setTodos([...todos, input]);
+      setInput('');
+    }
+  };
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Add a task"
+      />
+      <button onClick={addTodo}>Add</button>
+      <ul>
+        {todos.map((todo, index) => (
+          <li key={index}>{todo}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default TodoList;
+</code></pre>
+                <p>This component allows users to add tasks to a list, using state to manage the input and task list.</p>
+
+                <h4>Next Steps</h4>
+                <p>Enhance the to-do list by adding features like task deletion or persistence with local storage. Explore other hooks like <code>useEffect</code> for side effects.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-4">
+        <div class="ad-space text-center" style="height: 250px; background-color: #f0f0f0;">
+            <!-- Google AdSense code would go here -->
+        </div>
+    </div>
+
+    <footer class="container py-xl-5 py-3">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4">
+                <ul class="text-sm list-unstyled text-secondary">
+                    <li><h2 class="text-blue text-uppercase fw-bold">Bloggy Tech</h2></li>
+                    <li>Wah cantt</li>
+                    <li></li>
+                    <li class="mt-2"><b>Phone:</b> +92 315 1248441</li>
+                    <li><b>Email:</b> info@bloggytech.com</li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+                <ul class="text-sm list-unstyled text-secondary">
+                    <li><h4 class="text-blue text-uppercase fw-bold">Useful Links</h4></li>
+                    <li><i class="bi bi-chevron-right text-info"></i> <a href="index.html">Home</a></li>
+                    <li><i class="bi bi-chevron-right text-info"></i> <a href="about.html">About Us</a></li>
+                    <li class="mt-2"><i class="bi bi-chevron-right text-info"></i> <a href="tutorials.html">Tutorials</a></li>
+                    <li><i class="bi bi-chevron-right text-info"></i> <a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+                <ul class="text-sm list-unstyled text-secondary">
+                    <li><h4 class="text-blue text-uppercase fw-bold">Our Services</h4></li>
+                    <li>Programming Tutorials</li>
+                    <li>Tech News</li>
+                    <li class="mt-2">Developer Resources</li>
+                    <li>Community Forums</li>
+                </ul>
+            </div>
+            <div class="col-xl-3 col-lg-4">
+                <ul class="text-sm list-unstyled text-secondary">
+                    <li><h4 class="text-blue text-uppercase fw-bold">Follow Us</h4></li>
+                    <li class="d-flex gap-3">
+                        <i class="bi bi-twitter-x"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center text-sm">© Copyright <b>Bloggy Tech</b> All Rights Reserved</p>
+        <p class="text-center text-sm">Designed by <span class="text-info">BloggyTech</span></p>
+    </footer>
+
+    <div class="container my-4">
+        <div class="ad-space text-center" style="height: 90px; background-color: #f0f0f0;">
+            <!-- Google AdSense code would go here -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+
+</html>
