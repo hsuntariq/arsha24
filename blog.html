@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XLEYN2FMVD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XLEYN2FMVD");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -65,14 +79,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="projects.html">Projects</a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="authors.html">Authors</a>
-                </li> -->
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="subscriptions.html"
-                    >Subscriptions</a
-                  >
-                </li> -->
                 <li class="nav-item">
                   <a
                     class="nav-link active"
@@ -93,24 +99,23 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Privacy Policy</a>
+                      <a class="dropdown-item" href="privacy-policy.html"
+                        >Privacy Policy</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Terms of Service</a>
+                      <a class="dropdown-item" href="terms-of-service.html"
+                        >Terms of Service</a
+                      >
                     </li>
                     <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">Sitemap</a></li>
+                    <li>
+                      <a class="dropdown-item" href="sitemap.html">Sitemap</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="btn btn-info text-white px-4 rounded-pill"
-                    href="subscriptions.html"
-                    >Subscribe</a
-                  >
                 </li>
               </ul>
             </div>
@@ -163,12 +168,12 @@
         <div class="row">
           <div class="col-xl-4 col-lg-6 my-2">
             <div class="card border-0 shadow-lg blog-card">
-              <a href="python-beginners.html">
+              <a href="advanced-python-techniques.html">
                 <img
-                  height="250px"
-                  class="object-fit-contain"
                   src="./images/pyhton.png"
+                  height="250px"
                   width="100%"
+                  class="object-fit-contain"
                   alt="Advanced Python techniques for developers"
                 />
               </a>
@@ -184,21 +189,22 @@
                   <p class="text-secondary">Programming</p>
                 </div>
                 <a
-                  href="python-beginners.html"
+                  href="advanced-python-techniques.html"
                   class="text-secondary fw-semibold text-decoration-none d-flex align-items-center gap-2"
                   >Read More <i class="bi bi-arrow-right"></i
                 ></a>
               </div>
             </div>
           </div>
+
           <div class="col-xl-4 col-lg-6 my-2">
             <div class="card border-0 shadow-lg blog-card">
-              <a href="ai-basics.html">
+              <a href="ethics-ai-development.html">
                 <img
-                  height="250px"
-                  class="object-fit-contain"
                   src="./images/ml.jpg"
+                  height="250px"
                   width="100%"
+                  class="object-fit-cover"
                   alt="Ethics in artificial intelligence development"
                 />
               </a>
@@ -214,7 +220,7 @@
                   <p class="text-secondary">AI</p>
                 </div>
                 <a
-                  href="ai-basics.html"
+                  href="ethics-ai-development.html"
                   class="text-secondary fw-semibold text-decoration-none d-flex align-items-center gap-2"
                   >Read More <i class="bi bi-arrow-right"></i
                 ></a>
@@ -223,12 +229,12 @@
           </div>
           <div class="col-xl-4 col-lg-6 my-2">
             <div class="card border-0 shadow-lg blog-card">
-              <a href="devops-basics.html">
+              <a href="./devops-basics.html">
                 <img
-                  height="250px"
-                  class="object-fit-contain"
                   src="./images/docket.png"
+                  height="250px"
                   width="100%"
+                  class="object-fit-contain"
                   alt="Top DevOps tools for 2025"
                 />
               </a>
@@ -242,7 +248,155 @@
                   <p class="text-secondary">DevOps</p>
                 </div>
                 <a
-                  href="devops-basics.html"
+                  href="./devops-basics.html"
+                  class="text-secondary fw-semibold text-decoration-none d-flex align-items-center gap-2"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 my-2">
+            <div class="card border-0 shadow-lg blog-card">
+              <a href="intro-machine-learning-python.html">
+                <img
+                  src="./images/mlpython.png"
+                  height="250px"
+                  width="100%"
+                  class="object-fit-cover"
+                  alt="Introduction to Machine Learning with Python"
+                />
+              </a>
+              <div class="content2 p-4">
+                <h5 class="text-blue fw-bold">
+                  Introduction to Machine Learning with Python
+                </h5>
+                <div class="d-flex gap-3">
+                  <i class="bi bi-person text-info"></i>
+                  <p class="text-secondary">Emma Smith</p>
+                  <p>/</p>
+                  <i class="bi bi-folder text-info"></i>
+                  <p class="text-secondary">Machine Learning</p>
+                </div>
+                <a
+                  href="intro-machine-learning-python.html"
+                  class="text-secondary fw-semibold text-decoration-none d-flex align-items-center gap-2"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 my-2">
+            <div class="card border-0 shadow-lg blog-card">
+              <a href="building-restful-apis-nodejs.html">
+                <img
+                  src="./images/rest-api-nodejs.png"
+                  height="250px"
+                  width="100%"
+                  class="object-fit-cover"
+                  alt="Building RESTful APIs with Node.js"
+                />
+              </a>
+              <div class="content2 p-4">
+                <h5 class="text-blue fw-bold">
+                  Building RESTful APIs with Node.js
+                </h5>
+                <div class="d-flex gap-3">
+                  <i class="bi bi-person text-info"></i>
+                  <p class="text-secondary">John Doe</p>
+                  <p>/</p>
+                  <i class="bi bi-folder text-info"></i>
+                  <p class="text-secondary">Web Development</p>
+                </div>
+                <a
+                  href="building-restful-apis-nodejs.html"
+                  class="text-secondary fw-semibold text-decoration-none d-flex align-items-center gap-2"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 my-2">
+            <div class="card border-0 shadow-lg blog-card">
+              <a href="cybersecurity-best-practices.html">
+                <img
+                  src="./images/cybersecurity.jpg"
+                  height="250px"
+                  width="100%"
+                  class="object-fit-cover"
+                  alt="Cybersecurity Best Practices for Developers"
+                />
+              </a>
+              <div class="content2 p-4">
+                <h5 class="text-blue fw-bold">
+                  Cybersecurity Best Practices for Developers
+                </h5>
+                <div class="d-flex gap-3">
+                  <i class="bi bi-person text-info"></i>
+                  <p class="text-secondary">Jane Roe</p>
+                  <p>/</p>
+                  <i class="bi bi-folder text-info"></i>
+                  <p class="text-secondary">Cybersecurity</p>
+                </div>
+                <a
+                  href="cybersecurity-best-practices.html"
+                  class="text-secondary fw-semibold text-decoration-none d-flex align-items-center gap-2"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 my-2">
+            <div class="card border-0 shadow-lg blog-card">
+              <a href="cloud-computing-aws.html">
+                <img
+                  src="./images/cloud-computing-aws.jpg"
+                  height="250px"
+                  width="100%"
+                  class="object-fit-cover"
+                  alt="Cloud Computing with AWS"
+                />
+              </a>
+              <div class="content2 p-4">
+                <h5 class="text-blue fw-bold">Cloud Computing with AWS</h5>
+                <div class="d-flex gap-3">
+                  <i class="bi bi-person text-info"></i>
+                  <p class="text-secondary">Michael Brown</p>
+                  <p>/</p>
+                  <i class="bi bi-folder text-info"></i>
+                  <p class="text-secondary">Cloud Computing</p>
+                </div>
+                <a
+                  href="cloud-computing-aws.html"
+                  class="text-secondary fw-semibold text-decoration-none d-flex align-items-center gap-2"
+                  >Read More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 my-2">
+            <div class="card border-0 shadow-lg blog-card">
+              <a href="react-vs-vue.html">
+                <img
+                  src="./images/react-vs-vue.webp"
+                  height="250px"
+                  width="100%"
+                  class="object-fit-cover"
+                  alt="React vs Vue: Which Framework to Choose"
+                />
+              </a>
+              <div class="content2 p-4">
+                <h5 class="text-blue fw-bold">
+                  React vs Vue: Which Framework to Choose
+                </h5>
+                <div class="d-flex gap-3">
+                  <i class="bi bi-person text-info"></i>
+                  <p class="text-secondary">Olivia Green</p>
+                  <p>/</p>
+                  <i class="bi bi-folder text-info"></i>
+                  <p class="text-secondary">Frontend Development</p>
+                </div>
+                <a
+                  href="react-vs-vue.html"
                   class="text-secondary fw-semibold text-decoration-none d-flex align-items-center gap-2"
                   >Read More <i class="bi bi-arrow-right"></i
                 ></a>
@@ -315,10 +469,30 @@
               <h4 class="text-blue text-uppercase fw-bold">Follow Us</h4>
             </li>
             <li class="d-flex gap-3">
-              <i class="bi bi-twitter-x"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-linkedin"></i>
+              <a
+                class="text-decoration-none text-dark"
+                href="https://www.twitter.com/hsuntariq"
+              >
+                <i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                class="text-decoration-none text-dark"
+                href="https://www.facebook.com/"
+              >
+                <i class="bi bi-facebook"></i
+              ></a>
+              <a
+                class="text-decoration-none text-dark"
+                href="https://www.instagram.com/ht0_0"
+              >
+                <i class="bi bi-instagram"></i
+              ></a>
+              <a
+                class="text-decoration-none text-dark"
+                href="https://www.linkedin.com/hsuntariq"
+              >
+                <i class="bi bi-linkedin"></i
+              ></a>
             </li>
           </ul>
         </div>

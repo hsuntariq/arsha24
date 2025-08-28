@@ -19,11 +19,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Learn Python programming for beginners with this step-by-step tutorial. Covers variables, loops, functions, and practical examples to start coding in Python."
+      content="Explore advanced Python techniques for developers, including decorators, generators, context managers, and more. Enhance your Python skills with practical examples."
     />
     <meta
       name="keywords"
-      content="Python tutorial, Python for beginners, learn Python, coding basics, Python variables, Python loops, Python functions"
+      content="advanced Python, Python decorators, Python generators, context managers, Python best practices"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -36,14 +36,13 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>Python for Beginners - Bloggy Tech Blog</title>
+    <title>Advanced Python Techniques for Developers - Bloggy Tech</title>
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4706191924087694"
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
     <div class="container-fluid hero-section">
       <div class="container">
@@ -74,26 +73,18 @@
                   <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="tutorials.html"
-                    >Tutorials</a
-                  >
+                  <a class="nav-link" href="tutorials.html">Tutorials</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="projects.html">Projects</a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="authors.html">Authors</a>
-                </li> -->
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="subscriptions.html"
-                    >Subscriptions</a
-                  >
-                </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="blog.html">Blog</a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="blog.html"
+                    >Blog</a
+                  >
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -107,24 +98,23 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">Privacy Policy</a>
+                      <a class="dropdown-item" href="privacy-policy.html"
+                        >Privacy Policy</a
+                      >
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Terms of Service</a>
+                      <a class="dropdown-item" href="terms-of-service.html"
+                        >Terms of Service</a
+                      >
                     </li>
                     <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">Sitemap</a></li>
+                    <li>
+                      <a class="dropdown-item" href="sitemap.html">Sitemap</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="btn btn-info text-white px-4 rounded-pill"
-                    href="subscriptions.html"
-                    >Subscribe</a
-                  >
                 </li>
               </ul>
             </div>
@@ -133,20 +123,23 @@
 
         <div class="row align-items-center">
           <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="display-4 fw-bold text-white">Python for Beginners</h1>
+            <h1 class="display-4 fw-bold text-white">
+              Advanced Python Techniques for Developers
+            </h1>
             <p class="fs-4 fw-semibold text-white-50">
-              Learn the basics of Python programming with hands-on examples.
+              Dive into advanced Python features to boost your coding
+              efficiency.
             </p>
             <button class="btn btn-info text-white rounded-pill px-3">
-              Get Started
+              Read On
             </button>
           </div>
           <div class="col-lg-6">
             <img
               class="animate-image"
-              src="./hero-img.png"
+              src="./images/advanced-python.png"
               width="100%"
-              alt="Illustration of Python programming"
+              alt="Illustration of advanced Python coding techniques"
             />
           </div>
         </div>
@@ -164,111 +157,124 @@
 
     <section class="container py-xl-5 py-3">
       <h2 class="text-center text-uppercase fw-bold text-blue">
-        Python for Beginners Tutorial
+        Advanced Python Techniques for Developers
       </h2>
       <div class="gray-line">
         <div class="blue-line"></div>
       </div>
       <p class="text-center my-3">
-        Master variables, loops, and functions with this beginner-friendly guide
-        to Python programming.
+        Enhance your Python skills with decorators, generators, and more.
       </p>
 
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h3 class="text-blue">1. Introduction to Python</h3>
+          <h3 class="text-blue">1. Introduction to Advanced Python</h3>
           <p>
-            Python is a versatile, high-level programming language known for its
-            simplicity and readability. It’s widely used in web development,
-            data science, and automation. This tutorial covers the basics to get
-            you started.
+            Python is known for its simplicity, but advanced techniques can make
+            your code more efficient and readable. This blog post explores
+            decorators, generators, context managers, and metaprogramming, with
+            practical examples to help developers level up their skills.
           </p>
 
-          <h4>Installing Python</h4>
+          <h4>2. Decorators</h4>
           <p>
-            Download Python from
-            <a href="https://www.python.org">python.org</a> and install it on
-            your system. Verify the installation by running the following
-            command in your terminal:
+            Decorators modify the behavior of functions without changing their
+            code. Here's a simple timing decorator:
           </p>
-          <pre><code>python --version</code></pre>
+          <pre><code>import time
 
-          <h4>Variables in Python</h4>
-          <p>
-            Variables store data. In Python, you don’t need to declare a
-            variable’s type. Here’s an example:
-          </p>
-          <pre><code>name = "Alice"
-age = 25
-height = 5.6
-print(name, age, height)
-</code></pre>
-          <p>
-            This code assigns a string, integer, and float to variables and
-            prints them.
-          </p>
+def timer(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(f"Execution time: {end - start} seconds")
+        return result
+    return wrapper
 
-          <h4>Loops in Python</h4>
-          <p>
-            Loops allow repetitive tasks. The <code>for</code> loop iterates
-            over a sequence:
-          </p>
-          <pre><code>for i in range(5):
-    print(i)
-</code></pre>
-          <p>
-            This prints numbers 0 to 4. The <code>while</code> loop continues
-            until a condition is false:
-          </p>
-          <pre><code>count = 0
-while count < 5:
-    print(count)
-    count += 1
-</code></pre>
+@timer
+def slow_function():
+    time.sleep(2)
+    return "Done"
 
-          <h4>Functions in Python</h4>
+print(slow_function())</code></pre>
           <p>
-            Functions encapsulate reusable code. Define a function using the
-            <code>def</code> keyword:
-          </p>
-          <pre><code>def greet(name):
-    return f"Hello, {name}!"
-print(greet("Bob"))
-</code></pre>
-          <p>This function takes a name parameter and returns a greeting.</p>
-
-          <h4>Practical Example: Simple Calculator</h4>
-          <p>Let’s build a basic calculator to practice these concepts:</p>
-          <pre><code>def calculator():
-    num1 = float(input("Enter first number: "))
-    op = input("Enter operator (+, -, *, /): ")
-    num2 = float(input("Enter second number: "))
-    
-    if op == "+":
-        result = num1 + num2
-    elif op == "-":
-        result = num1 - num2
-    elif op == "*":
-        result = num1 * num2
-    elif op == "/":
-        result = num1 / num2 if num2 != 0 else "Error: Division by zero"
-    else:
-        result = "Invalid operator"
-    
-    print(f"Result: {result}")
-
-calculator()
-</code></pre>
-          <p>
-            This program prompts for two numbers and an operator, performs the
-            calculation, and displays the result.
+            This decorator measures and prints the execution time of the
+            function it wraps.
           </p>
 
-          <h4>Next Steps</h4>
+          <h4>3. Generators</h4>
           <p>
-            Practice by modifying the calculator to handle more operators or add
-            error handling. Explore Python’s libraries like <code>math</code> or
-            <code>random</code> for advanced functionality.
+            Generators yield values lazily, saving memory for large datasets.
+            Example of a Fibonacci generator:
+          </p>
+          <pre><code>def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
+
+for num in fibonacci(10):
+    print(num)</code></pre>
+          <p>
+            This generates the first 10 Fibonacci numbers without storing the
+            entire sequence in memory.
+          </p>
+
+          <h4>4. Context Managers</h4>
+          <p>
+            Context managers handle resource management using 'with' statements.
+            Custom context manager example:
+          </p>
+          <pre><code>class FileManager:
+    def __init__(self, filename, mode):
+        self.filename = filename
+        self.mode = mode
+
+    def __enter__(self):
+        self.file = open(self.filename, self.mode)
+        return self.file
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.file.close()
+
+with FileManager('example.txt', 'w') as f:
+    f.write('Hello, Python!')</code></pre>
+          <p>
+            This ensures the file is closed after the block, even if an
+            exception occurs.
+          </p>
+
+          <h4>5. Metaprogramming</h4>
+          <p>
+            Metaprogramming allows code to manipulate other code. Example using
+            metaclasses:
+          </p>
+          <pre><code>class Meta(type):
+    def __new__(cls, name, bases, dct):
+        dct['added_method'] = lambda self: "Added by metaclass"
+        return super().__new__(cls, name, bases, dct)
+
+class MyClass(metaclass=Meta):
+    pass
+
+obj = MyClass()
+print(obj.added_method())</code></pre>
+          <p>This metaclass adds a method to any class that uses it.</p>
+
+          <h4>6. Best Practices</h4>
+          <p>
+            Use these techniques judiciously to avoid overcomplicating code.
+            Always prioritize readability and test thoroughly. Python's standard
+            library and third-party packages like functools can enhance these
+            features.
+          </p>
+
+          <h4>7. Conclusion</h4>
+          <p>
+            Mastering advanced Python techniques can significantly improve your
+            productivity and code quality. Experiment with these concepts in
+            your projects to see their benefits firsthand.
           </p>
         </div>
       </div>
@@ -332,7 +338,9 @@ calculator()
         </div>
         <div class="col-xl-3 col-lg-4">
           <ul class="text-sm list-unstyled text-secondary">
-            <li><h4 class="text-blue text-uppercase fw-bold">Follow Us</h4></li>
+            <li>
+              <h4 class="text-blue text-uppercase fw-bold">Follow Us</h4>
+            </li>
             <li class="d-flex gap-3">
               <a
                 class="text-decoration-none text-dark"
@@ -370,16 +378,6 @@ calculator()
         Designed by <span class="text-info">BloggyTech</span>
       </p>
     </footer>
-
-    <div class="container my-4">
-      <div
-        class="ad-space text-center"
-        style="height: 90px; background-color: #f0f0f0"
-      >
-        <!-- Google AdSense code would go here -->
-      </div>
-    </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
