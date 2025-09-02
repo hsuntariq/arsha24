@@ -385,5 +385,14 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+  <script>
+  function sendEmail(plan, feature) {
+    const subject = `Subscription Inquiry: ${plan}`;
+    const body = `Hello,\n\nI am interested in the following:\n\nPlan: ${plan}\nFeature: ${feature}\n\nMy Contact Information:\nName: \nPhone: \nEmail: \n\nThank you.`;
+    const mailto = `mailto:hsuntariq@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+  }
+</script>
+
   </body>
 </html>
