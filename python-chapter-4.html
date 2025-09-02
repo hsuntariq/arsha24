@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLEYN2FMVD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-XLEYN2FMVD");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chapter 4: Python Comments - Learn how to add single-line and multi-line comments to your Python code for better readability and documentation." />
+    <meta name="keywords" content="Python comments, Python single-line comments, Python multi-line comments, Python for beginners, Bloggy Tech Python tutorial" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.13.2/brython.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.13.2/brython_stdlib.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .sidebar { position: sticky; top: 30px; height: 100vh; overflow-y: auto; }
+      .sidebar .list-group-item { border: none; border-radius: 8px; margin-bottom: 6px; transition: background 0.2s, color 0.2s; padding: 10px 16px; font-weight: 500; }
+      .sidebar .list-group-item a { color: #1a237e; text-decoration: none; display: block; }
+      .sidebar .list-group-item:hover, .sidebar .list-group-item:focus { background: #e3f2fd; }
+      .main-content { padding-left: 0; padding-right: 0; }
+      @media (max-width: 991px) { .sidebar { position: static; height: auto; } }
+    </style>
+    <title>Chapter 4: Python Comments - Bloggy Tech</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4706191924087694" crossorigin="anonymous"></script>
+  </head>
+
+  <body onload="brython()">
+    <div class="container-fluid hero-section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand fs-2 text-uppercase fw-semibold" href="index.html">Bloggy Tech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="tutorials.html">Tutorials</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a class="dropdown-item" href="terms-of-service.html">Terms of Service</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="sitemap.html">Sitemap</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="btn btn-info text-white px-4 rounded-pill" href="subscriptions.html">Subscribe</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-4 fw-bold text-white">Chapter 4: Python Comments</h1>
+            <p class="fs-4 fw-semibold text-white-50">Learn how to add comments to your Python code for better readability.</p>
+            <a href="python-chapter-5.html" class="btn btn-info text-white rounded-pill px-3">Next Chapter</a>
+            <a href="python-chapter-3.html" class="btn btn-outline-light rounded-pill px-3 mt-2">Previous Chapter</a>
+          </div>
+          <div class="col-lg-6">
+            <img class="animate-image" src="./hero-img.png" width="100%" alt="Illustration of Python comments">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <div class="ad-space text-center" style="height: 90px; background-color: #f0f0f0;">
+        <!-- Google AdSense code would go here -->
+      </div>
+    </div>
+
+    <section class="py-xl-5 py-3">
+      <div class="row">
+        <div class="col-lg-3 sidebar">
+          <div class="card border-0 shadow-lg p-4">
+            <h4 class="text-blue fw-bold">Python Learning Path</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="python-chapter-1.html">1. Python Introduction</a></li>
+              <li class="list-group-item"><a href="python-chapter-2.html">2. Python Installation</a></li>
+              <li class="list-group-item"><a href="python-chapter-3.html">3. Python Syntax</a></li>
+              <li class="list-group-item active"><a href="python-chapter-4.html">4. Python Comments</a></li>
+              <li class="list-group-item"><a href="python-chapter-5.html">5. Python Variables</a></li>
+              <li class="list-group-item"><a href="python-chapter-6.html">6. Python Data Types</a></li>
+              <li class="list-group-item"><a href="python-chapter-7.html">7. Python Numbers</a></li>
+              <li class="list-group-item"><a href="python-chapter-8.html">8. Python Casting</a></li>
+              <li class="list-group-item"><a href="python-chapter-9.html">9. Python Strings</a></li>
+              <li class="list-group-item"><a href="python-chapter-10.html">10. Python Booleans</a></li>
+              <li class="list-group-item"><a href="python-chapter-11.html">11. Python Operators</a></li>
+              <li class="list-group-item"><a href="python-chapter-12.html">12. Python Lists</a></li>
+              <li class="list-group-item"><a href="python-chapter-13.html">13. Python Tuples</a></li>
+              <li class="list-group-item"><a href="python-chapter-14.html">14. Python Sets</a></li>
+              <li class="list-group-item"><a href="python-chapter-15.html">15. Python Dictionaries</a></li>
+              <li class="list-group-item"><a href="python-chapter-16.html">16. Python If...Else</a></li>
+              <li class="list-group-item"><a href="python-chapter-17.html">17. Python While Loops</a></li>
+              <li class="list-group-item"><a href="python-chapter-18.html">18. Python For Loops</a></li>
+              <li class="list-group-item"><a href="python-chapter-19.html">19. Python Functions</a></li>
+              <li class="list-group-item"><a href="python-chapter-20.html">20. Python Lambda</a></li>
+              <li class="list-group-item"><a href="python-chapter-21.html">21. Python Arrays</a></li>
+              <li class="list-group-item"><a href="python-chapter-22.html">22. Python Classes/Objects</a></li>
+              <li class="list-group-item"><a href="python-chapter-23.html">23. Python Inheritance</a></li>
+              <li class="list-group-item"><a href="python-chapter-24.html">24. Python Iterators</a></li>
+              <li class="list-group-item"><a href="python-chapter-25.html">25. Python Polymorphism</a></li>
+              <li class="list-group-item"><a href="python-chapter-26.html">26. Python Scope</a></li>
+              <li class="list-group-item"><a href="python-chapter-27.html">27. Python Modules</a></li>
+              <li class="list-group-item"><a href="python-chapter-28.html">28. Python Dates</a></li>
+              <li class="list-group-item"><a href="python-chapter-29.html">29. Python Math</a></li>
+              <li class="list-group-item"><a href="python-chapter-30.html">30. Python JSON</a></li>
+              <li class="list-group-item"><a href="python-chapter-31.html">31. Python RegEx</a></li>
+              <li class="list-group-item"><a href="python-chapter-32.html">32. Python PIP</a></li>
+              <li class="list-group-item"><a href="python-chapter-33.html">33. Python Try...Except</a></li>
+              <li class="list-group-item"><a href="python-chapter-34.html">34. Python User Input</a></li>
+              <li class="list-group-item"><a href="python-chapter-35.html">35. Python String Formatting</a></li>
+              <li class="list-group-item"><a href="python-chapter-36.html">36. Python File Handling</a></li>
+              <li class="list-group-item"><a href="python-chapter-37.html">37. Python Read Files</a></li>
+              <li class="list-group-item"><a href="python-chapter-38.html">38. Python Write/Create Files</a></li>
+              <li class="list-group-item"><a href="python-chapter-39.html">39. Python Delete Files</a></li>
+              <li class="list-group-item"><a href="python-chapter-40.html">40. Python NumPy Intro</a></li>
+              <li class="list-group-item"><a href="python-chapter-41.html">41. NumPy Getting Started</a></li>
+              <li class="list-group-item"><a href="python-chapter-42.html">42. NumPy Creating Arrays</a></li>
+              <li class="list-group-item"><a href="python-chapter-43.html">43. NumPy Array Indexing</a></li>
+              <li class="list-group-item"><a href="python-chapter-44.html">44. NumPy Array Slicing</a></li>
+              <li class="list-group-item"><a href="python-chapter-45.html">45. NumPy Data Types</a></li>
+              <li class="list-group-item"><a href="python-chapter-46.html">46. NumPy Copy vs View</a></li>
+              <li class="list-group-item"><a href="python-chapter-47.html">47. NumPy Array Shape</a></li>
+              <li class="list-group-item"><a href="python-chapter-48.html">48. NumPy Array Reshape</a></li>
+              <li class="list-group-item"><a href="python-chapter-49.html">49. NumPy Array Iterating</a></li>
+              <li class="list-group-item"><a href="python-chapter-50.html">50. NumPy Array Join</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9 main-content">
+          <h2 class="text-center text-uppercase fw-bold text-blue">Chapter 4: Python Comments</h2>
+          <div class="gray-line"><div class="blue-line"></div></div>
+          <p class="text-center my-3">Learn how to add comments to your Python code to improve readability and documentation.</p>
+          <div class="row">
+            <div class="col-lg-12">
+              <h3 class="text-blue">Understanding Python Comments</h3>
+              <p>
+                Comments in Python are non-executable lines of text used to explain code, making it easier to understand and maintain. They are ignored by the Python interpreter, so they don’t affect how your program runs. Comments are essential for documenting code, especially in collaborative projects or when revisiting code later. This chapter covers single-line and multi-line comments, their syntax, and best practices for effective commenting.
+              </p>
+              <h4>Single-Line Comments</h4>
+              <p>
+                Single-line comments start with the hash symbol (<code>#</code>) and continue until the end of the line. They are ideal for brief explanations or notes:
+                <pre># This is a single-line comment
+print("Hello, World!")  # Prints a greeting
+                </pre>
+                In this example, the first line is a standalone comment, and the second comment explains the <code>print</code> statement. The interpreter ignores everything after <code>#</code> on each line.
+              </p>
+              <h4>Multi-Line Comments</h4>
+              <p>
+                Python doesn’t have a specific syntax for multi-line comments, but you can use triple quotes (<code>"""</code> or <code>'''</code>) to create them. Triple quotes are typically used for docstrings (documentation for functions or modules), but they work as comments when not assigned to a variable:
+                <pre>
+"""
+This is a multi-line comment.
+It spans multiple lines.
+Useful for detailed explanations.
+"""
+print("Hello, Python!")
+                </pre>
+                This outputs <code>Hello, Python!</code>, ignoring the text within triple quotes. Alternatively, you can use multiple single-line comments:
+                <pre>
+# This is line 1 of the comment
+# This is line 2 of the comment
+print("Hello, Python!")
+                </pre>
+              </p>
+              <h4>Using Comments Effectively</h4>
+              <p>
+                Comments should clarify code without stating the obvious. For example, avoid:
+                <pre>
+# Print hello
+print("hello")
+                </pre>
+                Instead, explain the purpose or logic:
+                <pre>
+# Display a welcome message to the user
+print("hello")
+                </pre>
+                Follow Python’s style guide, PEP 8, which recommends keeping comments concise and placing them above the code they describe or inline for short notes. Avoid over-commenting, as it can clutter code.
+              </p>
+              <h4>Docstrings vs. Comments</h4>
+              <p>
+                While triple quotes can be used for comments, they are more commonly used as docstrings to document functions, classes, or modules. Docstrings are accessible programmatically (e.g., via <code>__doc__</code>):
+                <pre>
+def greet(name):
+    """Return a greeting message for the given name."""
+    return f"Hello, {name}!"
+print(greet.__doc__)  # Outputs: Return a greeting message for the given name.
+                </pre>
+                Unlike regular comments, docstrings are stored and can be retrieved by tools like help() or documentation generators.
+              </p>
+              <h4>Next Steps</h4>
+              <p>
+                With an understanding of comments, move to <a href="python-chapter-5.html">Chapter 5: Python Variables</a> to learn how to store data in your programs. Use the sticky sidebar to navigate the 50-chapter learning path. For questions, reach out via our <a href="contact.html">Contact</a> page or email info@bloggytech.com. Bloggy Tech, based in Wah Cantt, Pakistan, is here to support your Python learning journey.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container my-4">
+      <div class="ad-space text-center" style="height: 250px; background-color: #f0f0f0;">
+        <!-- Google AdSense code would go here -->
+      </div>
+    </div>
+
+    <footer class="container py-xl-5 py-3">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li><h2 class="text-blue text-uppercase fw-bold">Bloggy Tech</h2></li>
+            <li>Wah Cantt</li>
+            <li></li>
+            <li class="mt-2"><b>Phone:</b> +92 315 1248441</li>
+            <li><b>Email:</b> info@bloggytech.com</li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li><h4 class="text-blue text-uppercase fw-bold">Useful Links</h4></li>
+            <li><i class="bi bi-chevron-right text-info"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right text-info"></i> <a href="about.html">About Us</a></li>
+            <li class="mt-2"><i class="bi bi-chevron-right text-info"></i> <a href="tutorials.html">Tutorials</a></li>
+            <li><i class="bi bi-chevron-right text-info"></i> <a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li><h4 class="text-blue text-uppercase fw-bold">Our Services</h4></li>
+            <li>Programming Tutorials</li>
+            <li>Tech News</li>
+            <li class="mt-2">Developer Resources</li>
+            <li>Community Forums</li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+          <ul class="text-sm list-unstyled text-secondary">
+            <li><h4 class="text-blue text-uppercase fw-bold">Follow Us</h4></li>
+            <li class="d-flex gap-3">
+              <a class="text-decoration-none text-dark" href="https://www.twitter.com/hsuntariq"><i class="bi bi-twitter-x"></i></a>
+              <a class="text-decoration-none text-dark" href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+              <a class="text-decoration-none text-dark" href="https://www.instagram.com/ht0_0"><i class="bi bi-instagram"></i></a>
+              <a class="text-decoration-none text-dark" href="https://www.linkedin.com/hsuntariq"><i class="bi bi-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="text-center text-sm">© Copyright <b>Bloggy Tech</b> All Rights Reserved</p>
+      <p class="text-center text-sm">Designed by <span class="text-info">BloggyTech</span></p>
+    </footer>
+
+    <div class="container my-4">
+      <div class="ad-space text-center" style="height: 90px; background-color: #f0f0f0;">
+        <!-- Google AdSense code would go here -->
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script type="text/python"></script>
+  </body>
+</html>
